@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <title>{% block title %}Welcome!{% endblock %}</title>
-    <link rel="stylesheet" href="https://bootswatch.com/5/sketchy/bootstrap.min.css">
+    <link rel="stylesheet" href="https://bootswatch.com/5/litera/bootstrap.min.css">
     {% block stylesheets %}
     {% endblock %}
 
@@ -14,65 +14,26 @@
   <body>
     <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">SymBlog</a>
+        <a class="navbar-brand" href="/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">SymBlog</font></font></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Basculer la navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarColor01">
           <ul class="navbar-nav me-auto">
             <li class="nav-item">
-              <a class="nav-link active" href="#">
-                <font style="vertical-align: inherit;">
-                  <font style="vertical-align: inherit;">Maison</font>
-                </font>
-                <span class="visually-hidden">
-                  <font style="vertical-align: inherit;">
-                    <font style="vertical-align: inherit;">(actuel)</font>
-                  </font>
-                </span>
+              <a class="nav-link" href="/blog"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">lien1
+                </font></font><span class="visually-hidden"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">(actuel)</font></font></span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">
-                <font style="vertical-align: inherit;">
-                  <font style="vertical-align: inherit;">Caractéristiques</font>
-                </font>
-              </a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                <font style="vertical-align: inherit;">
-                  <font style="vertical-align: inherit;">Dérouler</font>
-                </font>
-              </a>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">
-                  <font style="vertical-align: inherit;">
-                    <font style="vertical-align: inherit;">Action</font>
-                  </font>
-                </a>
-                <a class="dropdown-item" href="#">
-                  <font style="vertical-align: inherit;">
-                    <font style="vertical-align: inherit;">Une autre action</font>
-                  </font>
-                </a>
-                <a class="dropdown-item" href="#">
-                  <font style="vertical-align: inherit;">
-                    <font style="vertical-align: inherit;">Quelque chose d'autre ici</font>
-                  </font>
-                </a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">
-                  <font style="vertical-align: inherit;">
-                    <font style="vertical-align: inherit;">Lien séparé</font>
-                  </font>
-                </a>
-              </div>
+              <a class="nav-link" href="blog/new"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">lien2</font></font></a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-    {% block body %}{% endblock %}
+    <div class="containers">
+      {% block body %}{% endblock %}
+    </div>
   </body>
 </html>
